@@ -4,70 +4,134 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ink Digital Studio — Productivity Templates, Tools & Automation</title>
-<meta name="description" content="Ink Digital Studio builds practical digital products: spreadsheet templates, Notion systems, automation scripts and AI toolkits to help you work faster. Pay with crypto or card.">
+<meta name="description" content="Practical digital products: spreadsheet templates, Notion systems, AI prompt packs and automation scripts. Instant download. Pay with crypto or card.">
 <style>
-:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--tx:#e6edf3;--mut:#8b949e;--acc:#58a6ff;--ok:#3fb950}
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--tx:#e6edf3;--mut:#8b949e;--acc:#58a6ff;--ok:#3fb950;--warn:#d29922}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
-.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
 header{padding:72px 0 48px;text-align:center;border-bottom:1px solid var(--line)}
-h1{font-size:2.4rem;letter-spacing:-.02em;margin-bottom:12px}
-.tag{color:var(--mut);font-size:1.1rem;max-width:640px;margin:0 auto}
-.badge{display:inline-block;margin-top:20px;padding:4px 12px;border:1px solid var(--line);border-radius:999px;font-size:.8rem;color:var(--mut)}
+h1{font-size:2.6rem;letter-spacing:-.02em;margin-bottom:14px}
+.tag{color:var(--mut);font-size:1.15rem;max-width:640px;margin:0 auto}
+.badge{display:inline-block;margin-top:22px;padding:5px 14px;border:1px solid var(--line);border-radius:999px;font-size:.82rem;color:var(--mut)}
 section{padding:56px 0;border-bottom:1px solid var(--line)}
-h2{font-size:1.5rem;margin-bottom:8px}
+h2{font-size:1.6rem;margin-bottom:8px}
 .sub{color:var(--mut);margin-bottom:28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
-.card h3{font-size:1.05rem;margin-bottom:8px}
-.card p{color:var(--mut);font-size:.92rem}
-.price{margin-top:12px;color:var(--ok);font-weight:600}
-.pay{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;word-break:break-all}
-.addr{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85rem;color:var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;transition:border-color .15s}
+.card:hover{border-color:var(--acc)}
+.card h3{font-size:1.1rem;margin-bottom:8px}
+.card p{color:var(--mut);font-size:.93rem;flex:1}
+.price{margin-top:14px;color:var(--ok);font-weight:700;font-size:1.15rem}
+.price s{color:var(--mut);font-weight:400;font-size:.9rem;margin-left:6px}
+.btn{display:inline-block;margin-top:14px;padding:10px 18px;background:var(--acc);color:#0d1117;border-radius:8px;font-weight:600;text-align:center}
+.btn:hover{opacity:.9}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--tx)}
+.pay{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px;word-break:break-all}
+.addr{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem;color:var(--acc);display:block;margin-top:8px}
+.note{color:var(--warn);font-size:.88rem;margin-top:10px}
 footer{padding:40px 0;color:var(--mut);font-size:.85rem;text-align:center}
 a{color:var(--acc);text-decoration:none}
+ul.feat{list-style:none;color:var(--mut);font-size:.92rem;margin-top:10px}
+ul.feat li::before{content:"✓ ";color:var(--ok)}
 </style>
 </head>
 <body>
 <header>
 <div class="wrap">
 <h1>Ink Digital Studio</h1>
-<p class="tag">Practical digital products that help you work faster — spreadsheet templates, Notion systems, automation scripts and AI toolkits.</p>
+<p class="tag">Practical digital products that help you work faster — spreadsheet templates, Notion systems, AI prompt packs and automation scripts.</p>
 <span class="badge">Instant delivery · Crypto or card · Lifetime updates</span>
 </div>
 </header>
+
 <section>
 <div class="wrap">
 <h2>Products</h2>
 <p class="sub">Every product is a ready-to-use file. Download once, use forever.</p>
 <div class="grid">
-<div class="card"><h3>Office Productivity Pack</h3><p>8 ready-made spreadsheets: daily plan, weekly execution, meeting notes, budget, task list, project tracker and more.</p><div class="price">$19</div></div>
-<div class="card"><h3>Excel Automation Toolkit</h3><p>Formulas and templates that automate the repetitive parts of reporting — lookups, rollups, conditional flags.</p><div class="price">$29</div></div>
-<div class="card"><h3>AI Prompt Bundle</h3><p>Curated prompt sets for writing, reporting, analysis and email — copy, paste, done.</p><div class="price">$24</div></div>
-<div class="card"><h3>Resume & Cover Letter Pack</h3><p>ATS-friendly resume templates with wording formulas that get callbacks.</p><div class="price">$15</div></div>
+
+  <div class="card">
+    <h3>Office Productivity Pack</h3>
+    <p>8 ready-made spreadsheets: daily plan, weekly execution, meeting notes, budget, task list, project tracker and more.</p>
+    <ul class="feat"><li>8 Excel/Sheets templates</li><li>Works in Excel & Google Sheets</li></ul>
+    <div class="price">$19</div>
+    <a class="btn" href="products/office-productivity-pack.html">View & Buy</a>
+  </div>
+
+  <div class="card">
+    <h3>The 200-Prompt Productivity Vault</h3>
+    <p>200 copy-paste AI prompts across 10 work areas — email, meetings, planning, writing, analysis, negotiation and more. Works with ChatGPT, Claude &amp; Gemini.</p>
+    <ul class="feat"><li>200 tested prompts</li><li>Bonus: 10 meta-prompts</li></ul>
+    <div class="price">$9 <s>$19</s></div>
+    <a class="btn" href="products/200-prompt-productivity-vault.html">View & Buy</a>
+  </div>
+
+  <div class="card">
+    <h3>Excel Automation Toolkit</h3>
+    <p>Formulas and templates that automate the repetitive parts of reporting — lookups, rollups, conditional flags.</p>
+    <ul class="feat"><li>Ready-made formula library</li><li>Step-by-step notes</li></ul>
+    <div class="price">$29</div>
+    <a class="btn" href="products/excel-automation-toolkit.html">View & Buy</a>
+  </div>
+
+  <div class="card">
+    <h3>Resume &amp; Cover Letter Pack</h3>
+    <p>ATS-friendly resume templates with wording formulas that get callbacks.</p>
+    <ul class="feat"><li>3 resume layouts</li><li>Cover letter formulas</li></ul>
+    <div class="price">$15</div>
+    <a class="btn" href="products/resume-cover-letter-pack.html">View & Buy</a>
+  </div>
+
 </div>
 </div>
 </section>
+
 <section>
 <div class="wrap">
 <h2>Automation Services</h2>
 <p class="sub">Need something custom? We build small automations and scripts on request.</p>
 <div class="grid">
-<div class="card"><h3>Content Repurposing</h3><p>Turn one piece of content into multiple platform-ready versions, fast.</p><div class="price">from $60</div></div>
-<div class="card"><h3>Data Cleanup Scripts</h3><p>Deduplicate, normalize and merge messy spreadsheets automatically.</p><div class="price">from $80</div></div>
+  <div class="card"><h3>Content Repurposing</h3><p>Turn one piece of content into multiple platform-ready versions, fast.</p><div class="price">from $60</div></div>
+  <div class="card"><h3>Data Cleanup Scripts</h3><p>Deduplicate, normalize and merge messy spreadsheets automatically.</p><div class="price">from $80</div></div>
 </div>
 </div>
 </section>
+
+<section>
+<div class="wrap">
+<h2>How to buy</h2>
+<p class="sub">Two payment options. Both deliver instantly.</p>
+<div class="grid">
+  <div class="card">
+    <h3>Crypto (no signup)</h3>
+    <p>Send USDT / USDC / ETH (ERC-20) to the address below, then email your receipt. We deliver the file within a few hours.</p>
+    <span class="addr">0x7bef2c71757e7691c0863b98ff345a23ff5d6d6f</span>
+    <div class="note">ERC-20 network only. Do not send other coins.</div>
+  </div>
+  <div class="card">
+    <h3>Card / PayPal</h3>
+    <p>Prefer a card? Email us and we'll send a secure checkout link. Same instant delivery.</p>
+    <a class="btn ghost" href="mailto:inkdigitalstudio@gmail.com">Email to order</a>
+  </div>
+</div>
+</div>
+</section>
+
 <section>
 <div class="wrap">
 <h2>Contact</h2>
 <p class="sub">Questions, custom requests or a product you want built? Reach out.</p>
 <div class="pay">
-<strong>Crypto (USDT / USDC / ETH — ERC-20)</strong><br>
+<strong>Email</strong><br>
+<a href="mailto:inkdigitalstudio@gmail.com">inkdigitalstudio@gmail.com</a>
+<br><br>
+<strong>Crypto (USDT / USDC / ETH — ERC-20)</strong>
 <span class="addr">0x7bef2c71757e7691c0863b98ff345a23ff5d6d6f</span>
 </div>
 </div>
 </section>
+
 <footer>
 <div class="wrap">© 2026 Ink Digital Studio · Digital products for people who value their time.</div>
 </footer>
